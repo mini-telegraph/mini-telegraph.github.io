@@ -1,8 +1,8 @@
-h1 { font-family: Consolas, monaco, monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
-h3 { font-family: Consolas, monaco, monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 15.4px; font-style:italic; color: #777;}
-p { font-family: Consolas, monaco, monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 15.4px; }
-blockquote { font-family: Consolas, monaco, monospace; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; }
-pre { font-family: Consolas, monaco, monospace; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+h1 { font-family: Consolas, monaco, monospace; font-size: 1.7em; font-style: normal; font-variant: normal; font-weight: 700; line-height: 1.9em; }
+h3 { font-family: Consolas, monaco, monospace; font-size: 1em; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.1em; font-style:italic; color: #777;}
+p { font-family: Consolas, monaco, monospace; font-size: 1em; font-style: normal; font-variant: normal; font-weight: 500; line-height: 1.1em; }
+blockquote { font-family: Consolas, monaco, monospace; font-size: 1.5em; font-style: normal; font-variant: normal; font-weight: 400; line-height: 2em; }
+pre { font-family: Consolas, monaco, monospace; font-size: 0.9em; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.33em; }
 
 body {
     background-color: #f3f3f3;
