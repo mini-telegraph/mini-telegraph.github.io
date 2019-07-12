@@ -8,6 +8,13 @@ var firebaseConfig = {
     appId: "1:802906428032:web:20f3bd695f4709e6"
 };
 
+var user_name = "none";
 
+function updateUserName() {
+    user_name = "" + new Date().getTime()%100000*100 + Math.round(Math.random()*100);
+
+    alert(user_name);
+}
 
 firebase.initializeApp(firebaseConfig);
+updateUserName();
