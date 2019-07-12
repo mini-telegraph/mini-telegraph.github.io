@@ -3,8 +3,35 @@
         <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
         <script src="firebase.js"></script>
+        <script src="environment.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <h2>Mini Telegraph demo!!</h2>
+        <div class="container">
+                <center><h1>Mini Telegraph</h1></center>
+                <center><h3><i>/* Демонстрация */</i></h3></center>
+                <!--<p>Добро пожаловать!-->
+                <p>Напишите что-нибудь, и это будет напечатано.
+                <p>Ограничение по длине &mdash; 16 символов.
+                <p>Интервал между сообщениями  &mdash; не менее 30 секунд.
+                <p>
+                <div id="history">
+                    .<br>
+                    .<br>
+                    .<br>
+                    .<br>
+                    .<br>
+                    .<br>
+                    .<br>
+                    .<br>
+                    .<br>
+                    .<br>
+                    .<br>
+                    .<br>
+                    .<br>
+                    .<br>
+                <div>
+                <input id="textbox" type="text"><button id="button_send">OK</button>
+        </div>
     </body>
 </html>
