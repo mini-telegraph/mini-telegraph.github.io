@@ -47,17 +47,17 @@ pre { font-family: Consolas, monaco, monospace; font-size: 90%; font-style: norm
     border-radius: 1mm;
 }
 
-@media (min-width: 1367px) {
+@media screen and (min-width: 1367px) {
     .container { width: 40%; }
     body { font-size: 1.2em; }
 }
 
-@media (min-width: 1280px) and (max-width: 1366px) {
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
     .container { width: 60%; }
     body { font-size: 1.2em; }
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1090px) {
     .container { width: 90%; }
     body { font-size: 1.6em; }
 }
