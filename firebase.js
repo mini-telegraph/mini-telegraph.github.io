@@ -8,7 +8,7 @@ var firebaseConfig = {
     appId: "1:802906428032:web:20f3bd695f4709e6"
 };
 
-var user_name = "none";
+var user_id = "none";
 
 function getCookie(name) {
     var matches = document.cookie.match(new RegExp(
@@ -47,14 +47,23 @@ function setCookie(name, value, options) {
   }
 
 function updateUserName() {
-    user_name = getCookie("mt_name");
-    if(user_name == undefined) {
-        user_name = "" + new Date().getTime()*100 + Math.round(Math.random()*100);
-        setCookie("mt_name", user_name, {});
+    user_id = getCookie("mt_name");
+    if(user_id == undefined) {
+        user_id = "" + new Date().getTime()%1000000*100 + Math.round(Math.random()*100);
+        setCookie("mt_name", user_id, {});
     }
 
-    alert(user_name);
+    document.getElementById("info").innerText += " " + user_id;
 }
 
+function sendMessage(msg) {
+    firebase.database().ref('messages').push().set({
+        user: "" + user_id,
+        message: "" + msg,
+        time: "" + new Date().getTime()
+    });
+}
+
+/** init */
 firebase.initializeApp(firebaseConfig);
 updateUserName();

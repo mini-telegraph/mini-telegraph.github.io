@@ -3,13 +3,6 @@ body {
     font-size: 1.2em; 
 }
 
-
-h1 { font-family: Consolas, monaco, monospace; font-size: 170%; font-style: normal; font-variant: normal; font-weight: 700; line-height: 190%; }
-h3 { font-family: Consolas, monaco, monospace; font-size: 100%; font-style: normal; font-variant: normal; font-weight: 400; line-height: 110%; font-style:italic; color: #777;}
-p { font-family: Consolas, monaco, monospace; font-size: 100%; font-style: normal; font-variant: normal; font-weight: 500; line-height: 110%; }
-blockquote { font-family: Consolas, monaco, monospace; font-size: 150%; font-style: normal; font-variant: normal; font-weight: 400; line-height: 200%; }
-pre { font-family: Consolas, monaco, monospace; font-size: 90%; font-style: normal; font-variant: normal; font-weight: 400; line-height: 133%; }
-
 .container {
     width: 80%;
     background-color: #fff;
@@ -20,31 +13,6 @@ pre { font-family: Consolas, monaco, monospace; font-size: 90%; font-style: norm
     padding-left: 5mm;
     padding-right: 5mm;
     height: 95%;
-}
-
-#textbox {
-    font-family: Consolas, monaco, monospace;
-    font-size: 16px; font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 26.4px;
-    color: #333;
-    width:80%;
-    border: 1px solid #777;
-    border-radius: 1mm;
-}
-
-#button_send {
-    background: #777;
-    font-family: Consolas, monaco, monospace;
-    font-size: 16px; font-style: normal;
-    font-variant: normal;
-    font-weight: 500;
-    line-height: 26.4px;
-    color: #eee;
-    width:20%;
-    border: 1px solid #777;
-    border-radius: 1mm;
 }
 
 @media all and (min-width: 1367px) {
@@ -59,5 +27,56 @@ pre { font-family: Consolas, monaco, monospace; font-size: 90%; font-style: norm
 
 @media all and (max-width: 1090px) {
     .container { width: 90%; }
-    body { font-size: 1.6em; }
+    body { font-size: 2.0em; }
+}
+
+h1 { font-family: Consolas, monaco, monospace; font-size: 170%; font-style: normal; font-variant: normal; font-weight: 700; line-height: 190%; }
+h3 { font-family: Consolas, monaco, monospace; font-size: 100%; font-style: normal; font-variant: normal; font-weight: 400; line-height: 110%; font-style:italic; color: #777;}
+p, div { font-family: Consolas, monaco, monospace; font-size: 100%; font-style: normal; font-variant: normal; font-weight: 500; line-height: 110%; }
+blockquote { font-family: Consolas, monaco, monospace; font-size: 150%; font-style: normal; font-variant: normal; font-weight: 400; line-height: 200%; }
+pre { font-family: Consolas, monaco, monospace; font-size: 90%; font-style: normal; font-variant: normal; font-weight: 400; line-height: 133%; }
+
+
+#textbox {
+    font-family: Consolas, monaco, monospace;
+    font-size: 120%;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 190%;
+    color: #333;
+    width:80%;
+    border: 1px solid #777;
+    border-radius: 1mm;
+}
+
+#button_send {
+    background: #777;
+    font-family: Consolas, monaco, monospace;
+    font-size: 120%;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 190%;
+    color: #eee;
+    width:20%;
+    border: 1px solid #777;
+    border-radius: 1mm;
+}
+
+#history {
+    padding: 1em;
+}
+
+.time {
+    font-size: 70%;
+    color: #777;
+    vertical-align: bottom;
+}
+
+.message_box {
+    border: 1px solid #ccc;
+    border-radius: 0.2em;
+    line-height: 200%;
+    margin-bottom: 0.2em;
 }
