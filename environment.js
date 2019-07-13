@@ -55,5 +55,8 @@ document.getElementById("textbox")
     if (event.keyCode === 13) clickSend();
 });
 
+/** init */
 scrollDown();
 setInterval(timeLoop, 500);
+let tmp = getCookie("last_time");
+if(tmp != undefined) last_time = parseInt(tmp);
