@@ -28,6 +28,7 @@ function clickSend() {
         addMessage(msg);
         sendMessage(msg);
         last_time = new Date().getTime();
+        setCookie("last_time", last_time, {});
         onType();
     }
 }
