@@ -10,9 +10,9 @@ body {
     border-radius: 2mm;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 5mm;
-    padding-right: 5mm;
-    height: 95%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
 }
 
 @media all and (min-width: 1367px) {
@@ -45,9 +45,10 @@ pre { font-family: Consolas, monaco, monospace; font-size: 90%; font-style: norm
     font-weight: 700;
     line-height: 190%;
     color: #333;
-    width:20em;
+    width:90%;
     border: 1px solid #777;
     border-radius: 1mm;
+    margin-bottom: 0.5em;
 }
 
 #button_send {
@@ -68,12 +69,19 @@ pre { font-family: Consolas, monaco, monospace; font-size: 90%; font-style: norm
     padding: 1em;
     overflow-y: scroll;
     height:30%;
+    border: 1px solid #ccc;
+    border-radius: 1mm;;
 }
 
 #text_limit {
     color: #777;
     margin-left: -3.8em;
     text-align: left;
+}
+
+#info {
+    color: #777;
+    font-size: x-small;
 }
 
 .time {

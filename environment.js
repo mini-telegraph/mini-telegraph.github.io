@@ -9,7 +9,7 @@ function addMessage(msg) {
     var d = new Date();
     document.getElementById("history").innerHTML +=
     '<div class="message_box"><span class="time">' + 
-    (d.getHours() < 10 ? '0' : '') + d.getHours()  + ':' + (d.getMinutes() < 10 ? '0' : '') + d.getMinutes() +'</span>&#9993;&nbsp;' + 
+    (d.getHours() < 10 ? '0' : '') + d.getHours()  + ':' + (d.getMinutes() < 10 ? '0' : '') + d.getMinutes() +'</span>&nbsp;' + /*&#9993;*/
     '<span class="message">' + msg + '</span></div>';
 
     scrollDown();
@@ -60,4 +60,7 @@ document.getElementById("textbox")
 scrollDown();
 setInterval(timeLoop, 500);
 let tmp = getCookie("last_time");
-if(tmp != undefined) last_time = parseInt(tmp);
+if(tmp != undefined) {
+    last_time = parseInt(tmp);
+    timeLoop();
+}
